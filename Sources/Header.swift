@@ -1,6 +1,6 @@
 import Nest
 
-extension CollectionType where Generator.Element == Header {
+extension Collection where Iterator.Element == Header {
 
     public subscript(name: String) -> String? {
         for header in self {
